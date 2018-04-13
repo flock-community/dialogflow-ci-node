@@ -6,6 +6,10 @@ npm install --save-dev dialogflow-ci
 
 Run 'dialogflow-ci'
 
+## Example project
+
+Run 'TOKEN=<your Dialogflow token> npm test'
+
 ## Adding/modifying steps
 
 Add the following to a file in your cucumber load path (e.g. in features/support/load.js):
