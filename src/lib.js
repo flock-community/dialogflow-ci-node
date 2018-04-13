@@ -1,30 +1,28 @@
 const fs = require('fs-extra');
-const path = require('path');
 
 const glob = require('glob-promise');
 const fetch = require('node-fetch');
 
 const BASE_URL = 'https://api.dialogflow.com/v1';
-const BASE_DIR = path.join(__dirname, "src");
 
 const API_VERSION = "20150910";
 
-const lib = (token) => {
+const lib = (baseDir, token) => {
   return {
     fileList: (source) => {
-      return glob(`${BASE_DIR}/${source}/*.json`)
+      return glob(`${baseDir}/${source}/*.json`)
         .then(files => files
           .map(file => fs.readJson(file)))
         .then(x => Promise.all(x))
     },
 
     fileWrite: (source, data) => {
-      const file = `${BASE_DIR}/${source}/${data.name}.json`;
+      const file = `${baseDir}/${source}/${data.name}.json`;
       return fs.writeJson(file, data, {spaces: 4})
     },
 
     fileDelte: (source, data) => {
-      const file = `${BASE_DIR}/${source}/${data.name}.json`;
+      const file = `${baseDir}/${source}/${data.name}.json`;
       return fs.remove(file)
     },
 

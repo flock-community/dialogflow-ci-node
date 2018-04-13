@@ -1,8 +1,8 @@
 
 
-const app = function (token) {
+const app = function (dirName, token) {
 
-  const lib = require('./lib.js')(token);
+  const lib = require('./lib.js')(dirName, token);
 
   const listResult = (source) => {
     return Promise.all([lib.fileList(source), lib.dialogflowList(source)])
