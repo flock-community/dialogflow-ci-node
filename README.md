@@ -11,7 +11,7 @@ Run 'dialogflow-ci'
 Add the following to a file in your cucumber load path (e.g. in features/support/load.js):
 ```
 const cucumber = require('cucumber');
-require('dialogflow-ci').call(cucumber);
+require('dialogflow-ci').steps.call(cucumber);
 ```
 
 This ensures the steps are loaded into the project's Cucumber context and allow
