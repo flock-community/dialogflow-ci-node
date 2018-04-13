@@ -1,0 +1,49 @@
+{
+    "id": "e65331ae-e4da-4ff6-9b7d-170b4d231ca3",
+    "parentId": "11ddef1d-82b4-4e06-8f38-5658dae7b631",
+    "rootParentId": "11ddef1d-82b4-4e06-8f38-5658dae7b631",
+    "name": "Hoe gaat het - nou gewoon",
+    "auto": true,
+    "contexts": [
+        "hoegaathet",
+        "Hoegaathet-followup"
+    ],
+    "responses": [
+        {
+            "resetContexts": false,
+            "action": "Hoegaathet.Hoegaathet-custom",
+            "affectedContexts": [],
+            "parameters": [],
+            "messages": [
+                {
+                    "type": 0,
+                    "speech": "Goed"
+                }
+            ],
+            "defaultResponsePlatforms": {},
+            "speech": []
+        }
+    ],
+    "priority": 500000,
+    "webhookUsed": false,
+    "webhookForSlotFilling": false,
+    "lastUpdate": 1523613013,
+    "fallbackIntent": false,
+    "events": [],
+    "userSays": [
+        {
+            "id": "f16738fa-c13e-499e-b195-97c232bc00a4",
+            "data": [
+                {
+                    "text": "Nou, gewoon"
+                }
+            ],
+            "isTemplate": false,
+            "count": 0,
+            "updated": 1523613013,
+            "isAuto": false
+        }
+    ],
+    "followUpIntents": [],
+    "templates": []
+}

@@ -1,0 +1,39 @@
+{
+    "id": "f2115a9c-90c5-4fc4-a9a9-b55b30aa7d81",
+    "name": "Default Welcome Intent",
+    "auto": true,
+    "contexts": [],
+    "responses": [
+        {
+            "resetContexts": false,
+            "action": "input.welcome",
+            "affectedContexts": [],
+            "parameters": [],
+            "messages": [
+                {
+                    "type": 0,
+                    "speech": [
+                        "Hi!",
+                        "Hello!",
+                        "Good day!",
+                        "Greetings!"
+                    ]
+                }
+            ],
+            "defaultResponsePlatforms": {},
+            "speech": []
+        }
+    ],
+    "priority": 500000,
+    "webhookUsed": false,
+    "webhookForSlotFilling": false,
+    "fallbackIntent": false,
+    "events": [
+        {
+            "name": "WELCOME"
+        }
+    ],
+    "userSays": [],
+    "followUpIntents": [],
+    "templates": []
+}
