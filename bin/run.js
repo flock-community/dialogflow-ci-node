@@ -7,7 +7,7 @@ const dialogflowCucumber = require('../index');
 const cwd = process.cwd();
 
 const cli = new cucumber.Cli({
-    argv: process.argv.concat('--require', 'node_modules/dialogflow-cucumber'),
+    argv: process.argv.concat('--require', 'node_modules/dialogflow-ci'),
     cwd,
     stdout: process.stdout
 });

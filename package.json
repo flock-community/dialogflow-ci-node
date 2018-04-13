@@ -1,7 +1,7 @@
 {
-    "name": "dialogflow-cucumber",
+    "name": "dialogflow-ci",
     "version": "1.0.4",
-    "description": "Cucumber steps for testing DialogFlow",
+    "description": "Cucumber steps for testing DialogFlow apps",
     "main": "index.js",
     "author": "Vincent de Bruijn",
     "license": "MIT",
@@ -15,6 +15,6 @@
         "test": "./node_modules/.bin/cucumber.js"
     },
     "bin": {
-        "dialogflow-cucumber": "./bin/run.js"
+        "dialogflow-ci": "./bin/run.js"
     }
 }

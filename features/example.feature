@@ -1,9 +1,9 @@
 Feature: Example
   Background:
-    Stel ik begin een gesprek met de Bol.com Google Home applicatie
+    Stel ik begin een gesprek met de Test Google Home applicatie
 
-  Scenario: Cadeau tips
-    Wanneer ik zeg "Ik zoek een cadeau voor mijn dochter"
-    Dan vraagt de assistente hoeveel geld je wilt besteden
-    Vervolgens zeg ik "maximaal 10 euro"
-    Dan stelt de assistente voor om een cadeaubon te geven
+  Scenario: Test
+    Wanneer ik zeg "Hoe gaat het?"
+    Dan vraagt de assistente waarom ik dat wil weten
+    Vervolgens zeg ik "Nou, gewoon"
+    Dan zegt de assistente "goed"
