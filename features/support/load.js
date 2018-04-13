@@ -1,2 +1,2 @@
 const cucumber = require('cucumber');
-require('../../index.js').call(cucumber);
+require('../../index.js').steps.call(cucumber);
