@@ -1,4 +1,5 @@
 const glob = require('glob-promise');
+const fs = require('fs-extra');
 
 const lib = (baseDir) => {
     return {

@@ -7,7 +7,19 @@ const BASE_URL = 'https://api.dialogflow.com/v1';
 
 const API_VERSION = "20150910";
 
-const lib = (token) => {
+const queryData = function(query, contexts) {
+    return {
+        "contexts": contexts,
+        "lang": "nl",
+        "query": query,
+        "sessionId": "12345",
+        "timezone": "Netherlands/Amsterdam"
+    }
+}
+
+const lib = () => {
+    const token = process.env.TOKEN;
+
     return {
         dialogflowList: (source) => {
             const options = {
@@ -73,9 +85,8 @@ const lib = (token) => {
                 .then(x => x.json())
         },
 
-        dialogflowQuery: (data) => {
-            console.log(data);
-            console.log(token);
+        dialogflowQuery: (query, contexts) => {
+            const data = queryData(query, contexts);
             const options = {
                 method: 'POST',
                 headers: {

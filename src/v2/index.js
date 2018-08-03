@@ -4,36 +4,7 @@ const app = function(dirName, token) {
     const lib = require('./lib.js')(token);
 
     const listResult = (source) => {
-        return Promise.all([fileLib.fileList(source), lib.dialogflowList(source)])
-            .then(res => {
-
-                const [files, dialogflow] = res;
-
-                const update = files
-                    .filter(x => dialogflow.find(y => y.name === x.name))
-                    .map(x => {
-                        return {
-                            from: dialogflow.find(y => y.name === x.name),
-                            to: x
-                        }
-                    });
-                const create = files
-                    .filter(x => !dialogflow.find(y => y.name === x.name))
-                    .map(x => {
-                        return {
-                            to: x
-                        }
-                    });
-                const remove = dialogflow
-                    .filter(x => !files.find(y => y.name === x.name))
-                    .map(x => {
-                        return {
-                            from: x
-                        }
-                    });
-
-                return [].concat(update, create, remove)
-            })
+        return null;
     };
 
 

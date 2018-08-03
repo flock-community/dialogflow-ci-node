@@ -1,6 +1,6 @@
 const app = function(dirName, token) {
 
-    const fileLib = require('../fileLib.js')(dirName);
+    const fileLib = require('../file_lib.js')(dirName);
     const lib = require('./lib.js')(token);
 
     const listResult = (source) => {
