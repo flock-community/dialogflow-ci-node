@@ -1,5 +1,2 @@
-* Fix download/upload for v2
-* Expand documentation
-* Add verbose option (and only log responses when set)
 * Make java version
 * Add coverage tracker option: download all intents, measure which percentage of intents are covered (transition coverage)

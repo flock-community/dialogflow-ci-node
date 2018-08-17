@@ -42,7 +42,7 @@ TOKEN=<access token generated from your service account> ID=<your project id> VE
 Run:
 ```
 npm link
-TOKEN=<access token generated from your service account> VERSION=<your version> dialogflow-cli <download|upload> <target dir> <project id>
+TOKEN=<access token generated from your service account> VERSION=<your version> ID=<your project id> dialogflow-cli <download|upload> <target dir>
 ```
 
 This downloads/uploads all the intents/entities from your project as json files to/from the specified directory.

@@ -1,4 +1,4 @@
-const app = function(dirName, token) {
+const app = function(dirName) {
 
     const fileLib = require('../file_lib.js')(dirName);
     const lib = require('./lib.js')(token);

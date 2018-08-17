@@ -3,8 +3,8 @@
 const path = require('path');
 const app = require('../src/index.js');
 
-function download(path) {
-    app(path).download()
+function upload(path, token) {
+    app(path, token).upload()
 }
 
-module.exports = download
+module.exports = upload
